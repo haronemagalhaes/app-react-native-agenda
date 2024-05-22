@@ -6,13 +6,13 @@ from typing import List
 
 app = FastAPI()
 
-# Conectar ao banco de dados SQLite
+# banco de dados SQLite
 def get_db_connection():
     conn = sqlite3.connect("database.db")
     conn.row_factory = sqlite3.Row
     return conn
 
-# Criar as tabelas de usuários e produtos
+# tabelas de usuários e produtos
 def create_tables():
     conn = get_db_connection()
     conn.execute(
@@ -167,32 +167,6 @@ def create_activity(activity: Activity):
     conn.commit()
     conn.close()
     return {"message": "Activity created successfully"}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Endpoints para a API

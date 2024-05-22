@@ -16,7 +16,8 @@ export default function Profile({ navigation }) {
             <Text style={styles.heading}>Perfil de Usuário</Text>
             <View style={styles.profileContainer}>
                 <Image
-                    source={{ uri: 'https://via.placeholder.com/150' }} // URL da imagem de perfil
+                    source={{ uri: 'https://static.vecteezy.com/system/resources/thumbnails/036/498/770/small/ai-generated-african-baby-face-shot-with-transparent-background-png.png' }} // URL da imagem de perfil
+                    // source={{ uri: 'https://via.placeholder.com/150' }} // URL da imagem de perfil
                     style={styles.profileImage}
                 />
                 <Text style={styles.username}>Nome do Usuário</Text>
