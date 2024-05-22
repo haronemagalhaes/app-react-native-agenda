@@ -1,0 +1,2 @@
+fast Api 
+( startar o projeto) uvicorn main:app --reload 
